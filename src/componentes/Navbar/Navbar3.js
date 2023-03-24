@@ -13,7 +13,7 @@ function Navbar3() {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#"><img src='./imagenes/pngwing.com.png' className="header_logo" alt='logo'/></Navbar.Brand>
+        <Navbar.Brand href="#"><img src='../imagenes/pngwing.com.png' className="header_logo" alt='logo'/></Navbar.Brand>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav

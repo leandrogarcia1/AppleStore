@@ -9,7 +9,7 @@ const Footer = ()=> {
                 <div className="col-12 col-sm-4 ">
                     <h4 ><strong>Apple Store-Tucuman </strong> </h4>
                     
-                    <img src='./imagenes/pngwing.com.png' className="logo" alt='logo'/>
+                    <img src='../imagenes/pngwing.com.png' className="logo" alt='logo'/>
                     
                     
                 </div>

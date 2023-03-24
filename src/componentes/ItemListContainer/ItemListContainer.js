@@ -1,8 +1,23 @@
 import './ItemListContainer.css'
-import Catalogo from '../Catalogo/Catalogo'
+
+import { useEffect, useState } from 'react'
+import Productos from '../Productos/Productos.json'
+import ItemList from '../ItemList/ItemList'
 
 
 const ItemListContainer = () => {
+    const[data, setData]=useState([])
+    const promise = new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve(Productos)
+        },2000)
+    })
+
+    useEffect(()=>{
+        promise
+        .then((res)=>setData(res))
+        .catch((error)=> console.log(error))
+    },[])
     return(
         <div>
             <div className='row fondo'>
@@ -35,7 +50,7 @@ const ItemListContainer = () => {
             </div>
 
         
-            <Catalogo/>
+            <ItemList data={data}/>
             
 
             

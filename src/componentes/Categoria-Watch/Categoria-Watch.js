@@ -1,5 +1,4 @@
-import Catalogo from "../Catalogo/Catalogo"
-import WatchCards from "../Productos/Watch"
+
 import './Categoria-Watch.css'
 
 
