@@ -11,14 +11,20 @@ const ItemDetailContainer = () => {
 
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(true)
-    const { categoryId } = useParams()
+    const { ItemId } = useParams()
+    const promise = new Promise((resolve)=>{
+        setTimeout(()=>{
+            resolve(Productos)
+        },2000)
+    })
 
     useEffect(() => {
+        
         setLoading(true)
 
-        Productos()
+        promise
             .then((res) => {
-                setData( res.find((prod) => prod.id === Number(categoryId)) )
+                setData( res.find((prod) => prod.id === Number(ItemId)) )
             })
             .finally(() => {
                 setLoading(false)

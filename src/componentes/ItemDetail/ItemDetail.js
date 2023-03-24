@@ -1,21 +1,19 @@
 
+import { Link } from "react-router-dom"
 
 
 
-
-const ItemDetail = ({data}) => {
+const ItemDetail = ({item}) => {
     
     return (
        
         <div>
             
-            <h2>{producto.name}</h2>
+            <h2>{item.name}</h2>
             <hr/>
-            <img src={producto.img} alt={producto.name}/>
-            <p>{producto.description}</p>
-            <p>Precio: ${producto.price}</p>
-
-           
+            <img src={item.img} alt={item.name}/>
+            <p>{item.description}</p>
+            <p>Precio: ${item.price}</p>
 
 
         </div>
