@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "Apple Watch Series 8",
+        "price": 399.0,
+        "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo. Maecenas pulvinar lobortis est.",
+        "img": "./imagenes/watch-series-8.png",
+        "category": "watch",
+        "stock": 1
+    },
+    {
+        "id": 2,
+        "name": "Apple Watch Series SE",
+        "price": 799.00,
+        "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+        "img": "./imagenes/watch-series-SE.png",
+        "category": "watch",
+        "stock": 10
+    },
+    {
+        "id": 3,
+        "name": "Apple Watch Series Ultra",
+        "price": 260.00,
+        "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+        "img": "./imagenes/watch-series-ultra.png" ,
+        "category": "watch",
+        "stock": 9
+    },
+    {
+        "id": 4,
+        "name": "Sobe - Tropical Energy",
+        "price": 1167.87,
+        "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vulputate nonummy. Maecenas tincidunt lacus at velit. Vivamus vel nulla eget eros elementum pellentesque.",
+        "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+        "category": "perfumeria",
+        "stock": 27
+    },
+    {
+        "id": 5,
+        "name": "Milk - 2%",
+        "price": 3252.49,
+        "description": "In sagittis dui vel nisl. Duis ac nibh. Fusce lacus purus, aliquet at, feugiat non, pretium quis, lectus.\n\nSuspendisse potenti. In eleifend quam a odio. In hac habitasse platea dictumst.\n\nMaecenas ut massa quis augue luctus tincidunt. Nulla mollis molestie lorem. Quisque ut erat.",
+        "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+        "category": "limpieza",
+        "stock": 42
+    },
+    {
+        "id": 6,
+        "name": "Bread - Pumpernickle, Rounds",
+        "price": 12543.92,
+        "description": "Morbi porttitor lorem id ligula. Suspendisse ornare consequat lectus. In est risus, auctor sed, tristique in, tempus sit amet, sem.\n\nFusce consequat. Nulla nisl. Nunc nisl.",
+        "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+        "category": "limpieza",
+        "stock": 34
+    },
+    {
+        "id": 7,
+        "name": "Pork - Smoked Kassler",
+        "price": 7983.99,
+        "description": "Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus vestibulum sagittis sapien. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.\n\nEtiam vel augue. Vestibulum rutrum rutrum neque. Aenean auctor gravida sem.",
+        "img": "http://dummyimage.com/200x200.png/dddddd/000000",
+        "category": "carniceria",
+        "stock": 10
+    },
+    {
+        "id": 8,
+        "name": "Danishes - Mini Raspberry",
+        "price": 13779.43,
+        "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+        "img": "http://dummyimage.com/200x200.png/ff4444/ffffff",
+        "category": "perfumeria",
+        "stock": 27
+    },
+    {
+        "id": 9,
+        "name": "Beef Flat Iron Steak",
+        "price": 2466.88,
+        "description": "Proin leo odio, porttitor id, consequat in, consequat ut, nulla. Sed accumsan felis. Ut at dolor quis odio consequat varius.\n\nInteger ac leo. Pellentesque ultrices mattis odio. Donec vitae nisi.\n\nNam ultrices, libero non mattis pulvinar, nulla pede ullamcorper augue, a suscipit nulla elit ac nulla. Sed vel enim sit amet nunc viverra dapibus. Nulla suscipit ligula in lacus.",
+        "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+        "category": "limpieza",
+        "stock": 23
+    },
+    {
+        "id": 10,
+        "name": "Pepper - Black, Whole",
+        "price": 3399.87,
+        "description": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Proin risus. Praesent lectus.\n\nVestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan odio. Curabitur convallis.",
+        "img": "http://dummyimage.com/200x200.png/cc0000/ffffff",
+        "category": "perfumeria",
+        "stock": 49
+    }
+]

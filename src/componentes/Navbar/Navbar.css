@@ -1,36 +1,16 @@
-.header{
-    background-color: black;
-  }
-  
-  .header_container{
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 30px;
-  
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  
-  }
-  
   .header_logo{
     
     height: 3rem;
     width: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
+.link-nav{
+  color: gray;
+  margin: 1rem;
+  text-decoration: none;
   
-  .navbar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap:16px;
-  }
+}
   
-  .navbar_link{
-    font-size: 20px;
-    text-transform: uppercase ;
-    cursor: pointer;
-    font-weight: 700;
-    color: white;
-  }
+  
   
