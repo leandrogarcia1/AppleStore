@@ -1,12 +1,13 @@
 import './ItemListContainer.css'
-
+import ItemList from '../ItemList/ItemList'
 import { useEffect, useState } from 'react'
 import Productos from '../Productos/Productos.json'
-import ItemList from '../ItemList/ItemList'
+import { useParams } from 'react-router-dom'
 
 
 const ItemListContainer = () => {
     const[data, setData]=useState([])
+    const {categoryId}= useParams()
     const promise = new Promise((resolve)=>{
         setTimeout(()=>{
             resolve(Productos)
@@ -15,16 +16,22 @@ const ItemListContainer = () => {
 
     useEffect(()=>{
         promise
-        .then((res)=>setData(res))
+        .then((res)=>{
+            if(categoryId){
+                setData(res.filter((item)=> item.category === categoryId))
+            }else{
+                setData(res)
+            }
+        })
         .catch((error)=> console.log(error))
-    },[])
+    },[categoryId])
     return(
         <div>
             <div className='row fondo'>
                 <div className='col-12'>
                 <img
                 className="d-block w-100 "
-                src='./imagenes/carrusel1.jpg'
+                src='../imagenes/carrusel1.jpg'
                 alt="Ihpone 14"
                         />  
                 </div>
@@ -32,7 +39,7 @@ const ItemListContainer = () => {
                 <div className='col-12 col-sm-6'>
                     <img
                     className="d-block w-100"
-                    src='./imagenes/watch.jpg'
+                    src='../imagenes/watch.jpg'
                     alt="Apple Watch Series 8"
                             />
                 </div>
@@ -40,7 +47,7 @@ const ItemListContainer = () => {
                 <div className='col-12 col-sm-6'>
                     <img
                     className="d-block w-100 "
-                    src='./imagenes/mac-inicio.jpg'
+                    src='../imagenes/mac-inicio.jpg'
                     alt="Macbook Pro "
                             />
                 </div>

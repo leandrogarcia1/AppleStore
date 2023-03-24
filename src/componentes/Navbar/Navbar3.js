@@ -25,13 +25,11 @@ function Navbar3() {
             <Link to='nosotros' className='link-nav'>Nosotros</Link>
             
             <NavDropdown title="Categorias" id="navbarScrollingDropdown" className='m-2'>
-              < Link  to='/CategoriaWatch'  className='link-nav'  >Watch </Link>
+              < Link  to='/producto/watch'  className='link-nav'  >Watch </Link>
               <NavDropdown.Divider />
-                < Link  to='/'  className='link-nav'  > Iphone </Link>
+                < Link  to='/producto/iphone'  className='link-nav'  > Iphone </Link>
                 <NavDropdown.Divider />
-              < Link  to='/'  className='link-nav'  >Mac </Link>
-              
-
+              < Link  to='/producto/mac'  className='link-nav'  >Mac </Link>
             </NavDropdown>
             
           </Nav>

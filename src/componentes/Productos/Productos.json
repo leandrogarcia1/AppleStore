@@ -4,7 +4,7 @@
         "name": "Apple Watch Series 8",
         "price": 399.0,
         "description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.\n\nCurabitur in libero ut massa volutpat convallis. Morbi odio odio, elementum eu, interdum .",
-        "img": "./imagenes/watch-series-8.png",
+        "img": "../imagenes/watch-series-8.png",
         "category": "watch",
         "stock": 1
     },
@@ -13,7 +13,7 @@
         "name": "Apple Watch Series SE",
         "price": 799.00,
         "description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.\n\nNulla ut erat id mauris vulputate elementum. Nullam varius. Nulla facilisi.\n\nCras non velit nec nisi vu.",
-        "img": "./imagenes/watch-series-SE.png",
+        "img": "../imagenes/watch-series-SE.png",
         "category": "watch",
         "stock": 10
     },
@@ -22,7 +22,7 @@
         "name": "Apple Watch Series Ultra",
         "price": 260.00,
         "description": "Vestibulum quam sapien, varius ut, blandit non, interdum in, ante. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Duis faucibus accumsan",
-        "img": "./imagenes/watch-series-ultra.png" ,
+        "img": "../imagenes/watch-series-ultra.png" ,
         "category": "watch",
         "stock": 9
     },
