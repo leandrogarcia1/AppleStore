@@ -16,9 +16,7 @@ function ItemList({data}) {
                           <Card.Body>
                             <Card.Title>{producto.name}</Card.Title>
                             <p>Precio: $ {producto.price} USD</p>
-                            <Card.Text>
-                            {producto.description}
-                            </Card.Text>
+                            
                             <Button variant="primary">Mas Informacion </Button>
                           </Card.Body>
                         </Card>
