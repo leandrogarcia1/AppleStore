@@ -11,7 +11,7 @@ const ItemDetailContainer = () => {
 
     const [data, setData] = useState(null)
     const [loading, setLoading] = useState(true)
-    const { ItemId } = useParams()
+    const { itemId } = useParams()
     const promise = new Promise((resolve)=>{
         setTimeout(()=>{
             resolve(Productos)
@@ -24,7 +24,7 @@ const ItemDetailContainer = () => {
 
         promise
             .then((res) => {
-                setData( res.find((prod) => prod.id === Number(ItemId)) )
+                setData( res.find((prod) => prod.id === Number(itemId)) )
             })
             .finally(() => {
                 setLoading(false)

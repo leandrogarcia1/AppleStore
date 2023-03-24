@@ -18,7 +18,7 @@ function ItemList({data}) {
                             <Card.Title>{producto.name}</Card.Title>
                             <p>Precio: $ {producto.price} USD</p>
                             
-                            < Link  to='detail/{producto.id}' >Mas Informacion  </Link>
+                            < Link  to={`/detail/${producto.id}`}>Mas Informacion  </Link>
                           </Card.Body>
                         </Card>
                   </div>
