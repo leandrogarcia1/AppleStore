@@ -1,8 +1,16 @@
+import { useContext } from 'react';
 import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
+import context from 'react-bootstrap/esm/AccordionContext';
 import { Link } from 'react-router-dom'
+import { MyContexto } from '../../contexto/Mycontext';
 
 function ItemList({data}) {
+
+    const contexto=useContext(MyContexto)
+    console.log(contexto)
+
+
     return (
       <div>
 

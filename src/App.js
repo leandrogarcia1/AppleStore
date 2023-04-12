@@ -8,35 +8,35 @@ import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailCon
 
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Nosotros from './componentes/Nosotros/Nosotros';
-import CategoriaWatch from './componentes/Categoria-Watch/Categoria-Watch';
-
-import CatalogoCategoria from './componentes/CatalogoCategoria/CatalogoCategoria';
+import { MyContexto } from './contexto/Mycontext';
 
 
 
 
 function App() {
-  return (
-    <BrowserRouter>
-     
-      <Navbar3/>
-      
-      
-      <Routes>
-        <Route path='/' element={ <ItemListContainer /> }/>
-        <Route path='/Nosotros' element={ <Nosotros/> }/>
-        <Route path='*' element={ <Navigate to={"/"}/> }/>
-        <Route path='/detail/:itemId' element={ <ItemDetailContainer /> }/>
-        <Route path='/producto/:categoryId' element={ <ItemListContainer /> }/>
-       
-        
-        
-      </Routes>
-      
-      
 
-      <Footer/>
+  const profesor= "hola"
+
+  return (
+    <MyContexto.Provider value={profesor}>
+        <BrowserRouter>
+      
+          <Navbar3/>
+          
+          
+          <Routes>
+            <Route path='/' element={ <ItemListContainer /> }/>
+            <Route path='/Nosotros' element={ <Nosotros/> }/>
+            <Route path='*' element={ <Navigate to={"/"}/> }/>
+            <Route path='/detail/:itemId' element={ <ItemDetailContainer /> }/>
+            <Route path='/producto/:categoryId' element={ <ItemListContainer /> }/>
+          
+          </Routes>
+                  
+          <Footer/>
     </BrowserRouter>
+      </MyContexto.Provider>
+    
 
 
     

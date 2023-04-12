@@ -1,4 +1,5 @@
 
+import ItemCount from '../ItemCount/ItemCount'
 import './ItemDetail.css'
 
 
@@ -17,7 +18,11 @@ const ItemDetail = ({data}) => {
             <p><strong>Stock Disponible: </strong>{data.stock}</p>
             <p><strong>Precio: </strong> ${data.price}</p>
 
-
+            <ItemCount
+                max={data.stock}
+                data={data}
+            />
+               
         </div>
     )
 }
