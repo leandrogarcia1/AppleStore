@@ -8,17 +8,17 @@ import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailCon
 
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Nosotros from './componentes/Nosotros/Nosotros';
-import { MyContexto } from './contexto/Mycontext';
+
 
 
 
 
 function App() {
 
-  const profesor= "hola"
+  
 
   return (
-    <MyContexto.Provider value={profesor}>
+    
         <BrowserRouter>
       
           <Navbar3/>
@@ -35,7 +35,7 @@ function App() {
                   
           <Footer/>
     </BrowserRouter>
-      </MyContexto.Provider>
+      
     
 
 

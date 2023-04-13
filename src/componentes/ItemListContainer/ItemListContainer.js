@@ -1,8 +1,9 @@
 import './ItemListContainer.css'
 import ItemList from '../ItemList/ItemList'
-import { useEffect, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import Productos from '../Productos/Productos.json'
 import { useParams } from 'react-router-dom'
+import { CartContext } from '../../context/CartContext'
 
 
 const ItemListContainer = () => {
@@ -13,6 +14,8 @@ const ItemListContainer = () => {
             resolve(Productos)
         },2000)
     })
+
+    const {cartArray}= useContext(CartContext)
 
     useEffect(()=>{
         promise
@@ -25,6 +28,8 @@ const ItemListContainer = () => {
         })
         .catch((error)=> console.log(error))
     },[categoryId])
+
+    console.log(cartArray)
     return(
         <div>
             <div className='row fondo'>
