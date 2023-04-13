@@ -8,6 +8,7 @@ import ItemDetailContainer from './componentes/ItemDetailContainer/ItemDetailCon
 
 import { BrowserRouter, Routes, Route, Navigate} from 'react-router-dom';
 import Nosotros from './componentes/Nosotros/Nosotros';
+import CartProvider from './context/CartContext';
 
 
 
@@ -18,9 +19,9 @@ function App() {
   
 
   return (
-    
+      <CartProvider>
         <BrowserRouter>
-      
+        
           <Navbar3/>
           
           
@@ -34,7 +35,10 @@ function App() {
           </Routes>
                   
           <Footer/>
-    </BrowserRouter>
+        </BrowserRouter>
+
+      </CartProvider>
+        
       
     
 
